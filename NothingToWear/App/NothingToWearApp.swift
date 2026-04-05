@@ -7,6 +7,6 @@ struct NothingToWearApp: App {
         WindowGroup {
             RootView()
         }
-        .modelContainer(for: [ClothingItem.self, StyleProfile.self])
+        .modelContainer(for: [ClothingItem.self, StyleProfile.self, SavedOutfit.self])
     }
 }

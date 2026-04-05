@@ -44,7 +44,8 @@ final class ClaudeService {
     // 코디 추천 → 추천 조합 + 설명 반환
     func suggestOutfits(
         clothes: [ClothingItem],
-        styleAnalysis: StyleAnalysis
+        styleAnalysis: StyleAnalysis,
+        mood: String
     ) async throws -> [OutfitSuggestion] {
         // 옷 목록을 텍스트로 정리
         let clothesList = clothes.enumerated().map { index, item in
@@ -57,8 +58,9 @@ final class ClaudeService {
 
         내 스타일: \(styleAnalysis.description)
         스타일 키워드: \(styleAnalysis.keywords.joined(separator: ", "))
+        오늘의 무드/테마: \(mood)
 
-        위 옷들로 만들 수 있는 코디 3가지를 추천해줘.
+        위 옷들로 '\(mood)' 테마에 맞는 코디를 최대한 많이 추천해줘. 가능한 조합이면 모두 보여줘.
         각 코디는 다음 형식으로 (다른 말 없이 이 형식만):
 
         코디1:
