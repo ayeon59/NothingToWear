@@ -1,0 +1,4 @@
+// Config.xcconfig
+// Secrets.xcconfig 를 import해서 사용합니다.
+
+#include "Secrets.xcconfig"

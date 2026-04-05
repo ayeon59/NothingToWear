@@ -21,3 +21,6 @@ Carthage/Build/
 
 # macOS
 .DS_Store
+
+# Secrets
+**/Secrets.xcconfig
