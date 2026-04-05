@@ -10,9 +10,22 @@
 		466E50A32F823F3D0029B073 /* NothingToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NothingToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		466E50CB2F8250450029B073 /* Exceptions for "NothingToWear" folder in "NothingToWear" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 466E50A22F823F3D0029B073 /* NothingToWear */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		466E50A52F823F3D0029B073 /* NothingToWear */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				466E50CB2F8250450029B073 /* Exceptions for "NothingToWear" folder in "NothingToWear" target */,
+			);
 			path = NothingToWear;
 			sourceTree = "<group>";
 		};
@@ -127,6 +140,8 @@
 /* Begin XCBuildConfiguration section */
 		466E50AC2F823F450029B073 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 466E50A52F823F3D0029B073 /* NothingToWear */;
+			baseConfigurationReferenceRelativePath = Config/Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -190,6 +205,8 @@
 		};
 		466E50AD2F823F450029B073 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 466E50A52F823F3D0029B073 /* NothingToWear */;
+			baseConfigurationReferenceRelativePath = Config/Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -246,6 +263,8 @@
 		};
 		466E50AF2F823F450029B073 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 466E50A52F823F3D0029B073 /* NothingToWear */;
+			baseConfigurationReferenceRelativePath = Config/Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -253,6 +272,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NothingToWear/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -277,6 +297,8 @@
 		};
 		466E50B02F823F450029B073 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 466E50A52F823F3D0029B073 /* NothingToWear */;
+			baseConfigurationReferenceRelativePath = Config/Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,6 +306,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NothingToWear/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
