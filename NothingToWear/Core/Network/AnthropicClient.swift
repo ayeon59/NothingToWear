@@ -3,7 +3,7 @@ import Foundation
 struct AnthropicClient {
     private let apiKey: String
     private let baseURL = "https://api.anthropic.com/v1/messages"
-    private let model = "claude-opus-4-5"
+    private let model = "claude-haiku-4-5-20251001"
 
     init(apiKey: String) {
         self.apiKey = apiKey

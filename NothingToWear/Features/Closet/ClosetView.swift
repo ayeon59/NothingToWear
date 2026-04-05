@@ -3,17 +3,26 @@ import SwiftData
 
 struct ClosetView: View {
     @Query private var clothes: [ClothingItem]
+    @Environment(\.modelContext) private var modelContext
     @State private var showAddClothing = false
 
     var body: some View {
         NavigationStack {
             Group {
                 if clothes.isEmpty {
-                    ContentUnavailableView(
-                        "옷장이 비어있어요",
-                        systemImage: "tshirt",
-                        description: Text("옷 사진을 추가해보세요")
-                    )
+                    VStack(spacing: 20) {
+                        ContentUnavailableView(
+                            "옷장이 비어있어요",
+                            systemImage: "tshirt",
+                            description: Text("옷 사진을 추가해보세요")
+                        )
+                        #if DEBUG
+                        Button("테스트 데이터 추가") {
+                            SeedDataService.seedIfNeeded(context: modelContext)
+                        }
+                        .buttonStyle(.bordered)
+                        #endif
+                    }
                 } else {
                     ClothingGridView(clothes: clothes)
                 }
