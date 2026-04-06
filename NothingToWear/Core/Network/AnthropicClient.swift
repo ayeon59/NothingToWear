@@ -16,11 +16,12 @@ struct AnthropicClient {
         // 이미지 블록 추가
         for imageData in images {
             let base64 = imageData.base64EncodedString()
+            let mediaType = imageData.imageMediaType
             contentBlocks.append([
                 "type": "image",
                 "source": [
                     "type": "base64",
-                    "media_type": "image/jpeg",
+                    "media_type": mediaType,
                     "data": base64
                 ]
             ])
