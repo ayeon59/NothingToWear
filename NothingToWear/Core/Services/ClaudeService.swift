@@ -45,7 +45,8 @@ final class ClaudeService {
     func suggestOutfits(
         clothes: [ClothingItem],
         styleAnalysis: StyleAnalysis,
-        mood: String
+        mood: String,
+        referenceImages: [Data] = []
     ) async throws -> [OutfitSuggestion] {
         // 옷 목록을 텍스트로 정리
         let clothesList = clothes.enumerated().map { index, item in
@@ -79,7 +80,7 @@ final class ClaudeService {
         팁: 스타일링 팁
         """
 
-        let response = try await client.sendMessage(prompt: prompt)
+        let response = try await client.sendMessage(prompt: prompt, images: referenceImages)
         return parseOutfitSuggestions(response, clothes: clothes)
     }
 }
